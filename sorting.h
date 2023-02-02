@@ -1,12 +1,13 @@
 // selection sort function module in C
 
 void display(int a[],int n){
+  int i;
 
-    int i;
-
-    for(i=0;i<n;i++)
-        printf("%5d",a[i]);
-    printf("\n");
+  for(i=0;i<n;i++)
+  {
+    printf("%5d",a[i]);
+  }
+  printf("\n");
   
 }
 
@@ -28,7 +29,7 @@ void insertion(int a[],int n){
 
 void swap(int *a,int *b)
 {
-  int temp
+  int temp;
   temp=*a;
   *a=*b;
   *b=temp;
