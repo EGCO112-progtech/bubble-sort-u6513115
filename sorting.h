@@ -50,7 +50,7 @@ void bubbleSort(int a[],int n){
       if(a[j]>a[j+1])
       {
         swap(&a[j],&a[j + 1]);
-        sorted = 0;
+        sorted = 1;
       }
       display(a, n);
     }
@@ -61,10 +61,12 @@ void bubbleSort(int a[],int n){
 
 int Isprime(int x)
 {
-  if (x == 0 || x == 1) return 0;
+  if (x == 0 || x == 1) 
+    return 0;
   for (int i = 2; i < x; i++)
   {
-    if (x % i == 0) return 0;
+    if (x % i == 0) 
+      return 0;
   }
   return 1;
 }
