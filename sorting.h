@@ -55,7 +55,7 @@ void bubbleSort(int a[],int n){
       display(a, n);
     }
     printf("\n");
-    if (sorted) break;
+    if (sorted==0) break;
   }
 }
 
